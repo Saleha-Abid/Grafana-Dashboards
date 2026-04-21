@@ -950,7 +950,20 @@
         ]
       }
     },
-    "links": [],
+    "links": [
+      {
+        "asDropdown": false,
+        "icon": "external link",
+        "includeVars": false,
+        "keepTime": false,
+        "tags": [],
+        "targetBlank": true,
+        "title": "Source (GitHub)",
+        "tooltip": "View source file in repository",
+        "type": "link",
+        "url": "https://github.com/Saleha-Abid/Grafana-Dashboards/blob/main/gpu-report.json"
+      }
+    ],
     "liveNow": false,
     "preload": false,
     "tags": [],
@@ -974,7 +987,7 @@
       "timezone": "browser",
       "to": "now"
     },
-    "title": "GPU Health Report Copy",
+    "title": "GPU Health Report",
     "variables": [
       {
         "kind": "QueryVariable",
@@ -1017,9 +1030,7 @@
         "spec": {
           "allowCustomValue": true,
           "current": {
-            "text": [
-              "All"
-            ],
+            "text": "All",
             "value": [
               "$__all"
             ]
