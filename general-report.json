@@ -22253,6 +22253,18 @@
         "keepTime": false,
         "tags": [],
         "targetBlank": true,
+        "title": "Source (GitHub)",
+        "tooltip": "View source file in repository",
+        "type": "link",
+        "url": "https://github.com/Saleha-Abid/Grafana-Dashboards/blob/main/general-report.json"
+      },
+      {
+        "asDropdown": false,
+        "icon": "external link",
+        "includeVars": false,
+        "keepTime": false,
+        "tags": [],
+        "targetBlank": true,
         "title": "GitHub",
         "tooltip": "",
         "type": "link",
@@ -22294,7 +22306,7 @@
       "timezone": "browser",
       "to": "now"
     },
-    "title": "General Reports Copy",
+    "title": "General Reports",
     "variables": [
       {
         "kind": "DatasourceVariable",
