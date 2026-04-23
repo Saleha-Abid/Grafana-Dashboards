@@ -396,9 +396,11 @@
                       "group": "prometheus",
                       "kind": "DataQuery",
                       "spec": {
+                        "editorMode": "code",
                         "expr": "sum(DCGM_FI_DEV_POWER_USAGE{instance=~\"${instance}\", gpu=~\"${gpu}\"})",
                         "interval": "",
-                        "legendFormat": ""
+                        "legendFormat": "",
+                        "range": true
                       },
                       "version": "v0"
                     },
@@ -460,7 +462,7 @@
                 "orientation": "horizontal",
                 "reduceOptions": {
                   "calcs": [
-                    "sum"
+                    "last"
                   ],
                   "fields": "",
                   "values": false
@@ -995,10 +997,12 @@
           "allowCustomValue": true,
           "current": {
             "text": [
-              "node01:9400"
+              "argon01:9400",
+              "argon02:9400"
             ],
             "value": [
-              "node01:9400"
+              "argon01:9400",
+              "argon02:9400"
             ]
           },
           "definition": "label_values(DCGM_FI_DEV_GPU_TEMP, instance)",
