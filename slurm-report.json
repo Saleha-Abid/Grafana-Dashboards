@@ -1676,8 +1676,10 @@
                       "group": "prometheus",
                       "kind": "DataQuery",
                       "spec": {
-                        "expr": "slurm_user_jobs_running{job=~\"slurm-native.*\"} \u003e 0",
-                        "legendFormat": "{{username}}"
+                        "editorMode": "code",
+                        "expr": "slurm_user_jobs_running{job=~\"slurm-accounts\"} \u003e 0",
+                        "legendFormat": "{{username}}",
+                        "range": true
                       },
                       "version": "v0"
                     },
@@ -1794,8 +1796,10 @@
                       "group": "prometheus",
                       "kind": "DataQuery",
                       "spec": {
-                        "expr": "slurm_user_jobs_pending{job=~\"slurm-native.*\"} \u003e 0",
-                        "legendFormat": "{{username}}"
+                        "editorMode": "code",
+                        "expr": "slurm_user_jobs_pending{job=~\"slurm-accounts\"}",
+                        "legendFormat": "{{username}}",
+                        "range": true
                       },
                       "version": "v0"
                     },
@@ -1912,8 +1916,10 @@
                       "group": "prometheus",
                       "kind": "DataQuery",
                       "spec": {
-                        "expr": "slurm_user_jobs_cpus_alloc{job=~\"slurm-native.*\"} \u003e 0",
-                        "legendFormat": "{{username}}"
+                        "editorMode": "code",
+                        "expr": "slurm_user_jobs_cpus_alloc{job=~\"slurm-accounts\"} \u003e 0",
+                        "legendFormat": "{{username}}",
+                        "range": true
                       },
                       "version": "v0"
                     },
@@ -2031,8 +2037,10 @@
                       "group": "prometheus",
                       "kind": "DataQuery",
                       "spec": {
-                        "expr": "slurm_user_jobs_memory_alloc{job=~\"slurm-native.*\"} \u003e 0",
-                        "legendFormat": "{{username}}"
+                        "editorMode": "code",
+                        "expr": "slurm_user_jobs_memory_alloc{job=~\"slurm-accounts\"} \u003e 0",
+                        "legendFormat": "{{username}}",
+                        "range": true
                       },
                       "version": "v0"
                     },
@@ -3596,7 +3604,7 @@
           {
             "kind": "RowsLayoutRow",
             "spec": {
-              "collapse": true,
+              "collapse": false,
               "layout": {
                 "kind": "GridLayout",
                 "spec": {
